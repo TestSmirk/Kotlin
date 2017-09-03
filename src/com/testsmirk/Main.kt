@@ -1,9 +1,130 @@
 package com.testsmirk
 
+import com.testsmirk.`class`.Student
+
 /**
  * Created by testsmirk on 2017/8/18.
  */
+
+class Test {
+    var v = "成员属性"
+    fun setInterface(test: TestInterface) {
+        test.test()
+
+    }
+}
+
+interface TestInterface {
+    fun test()
+}
+
 fun main(args: Array<String>) {
+    test1()
+    test2()
+    test3();
+    var d = D()
+    d.d()
+    println("D = ${D.foo()}")
+    println("no:${D.no}")
+    var v = null
+    println(v.toString())
+
+
+}
+fun Any?.toString():String{
+    if (this==null) return "null"
+
+    return toString()
+
+}
+class D{
+    companion object {
+
+    }
+    fun d(){
+        println("123")
+    }
+}
+fun D.Companion.foo(){
+    println("D的扩展函数")
+}
+val D.Companion.no: Int
+    get() = 10
+
+fun D.d(){
+    println("456")
+}
+
+fun test3() {
+
+
+    var student = Student("001", "Student1", 20)
+    student.study()
+
+    println("  ")
+
+    var c = C()
+    c.f()
+
+    println("  ")
+    var user = User("TestSmirk")
+
+    user.Print()
+}
+
+fun User.Print(){
+        println("user name is $name")
+}
+open class A{
+    open fun f(){
+        println("A")
+    }
+    fun a(){
+        println("a")
+    }
+}
+interface B{
+    fun f(){
+        println("B")
+    }
+    fun b(){
+        println("b")
+    }
+}
+class C:A(),B{
+     override fun f() {
+
+     }
+}
+
+
+
+
+fun test2() {
+    println("++++++++++++++++++")
+    var smirk = Smirk()
+    smirk.lastname = "smirk1"
+    smirk.num = 9
+    println(smirk)
+
+    println("++++++++++++++++++")
+    var smirk1 = Smirk1("name1", 29)
+    println("--------------------")
+
+    Outer().Inner().foo()
+
+    println("--------------------")
+
+    var test = Test()
+    test.setInterface(object : TestInterface {
+        override fun test() {
+            println("对象表达式创建匿名内部类的实例.")
+        }
+
+    })
+}
+
+fun test1() {
     var lambia: (Int, Int) -> Int = { a, b -> a + b }
     print(lambia(2, 2))
     var a = 1
@@ -41,12 +162,12 @@ fun main(args: Array<String>) {
     println(q === q)
     val boxedQ: Int? = q;
     val atherBoxedQ: Int = q;
-    println(boxedQ===atherBoxedQ)
-    println(boxedQ==atherBoxedQ)
+    println(boxedQ === atherBoxedQ)
+    println(boxedQ == atherBoxedQ)
 
     println("")
-    val b:Byte =1
-    val i :Int =b.toInt()
+    val b: Byte = 1
+    val i: Int = b.toInt()
     println("---")
 
     val texta = """
@@ -56,7 +177,6 @@ fun main(args: Array<String>) {
     print(texta)
 
     println("")
-
 }
 
 fun getStringLength(any: Any): Int? {
