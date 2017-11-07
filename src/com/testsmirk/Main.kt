@@ -18,40 +18,61 @@ interface TestInterface {
     fun test()
 }
 
+
+
 fun main(args: Array<String>) {
-    test1()
-    test2()
-    test3();
-    var d = D()
-    d.d()
-    println("D = ${D.foo()}")
-    println("no:${D.no}")
-    var v = null
-    println(v.toString())
+  val t = Test()
 
 
 }
-fun Any?.toString():String{
-    if (this==null) return "null"
+fun test4(){
+    test1()
+    test2()
+    test3();
+    val d = D()
+    d.d()
+    println("D = ${D.foo()}")
+    println("no:${D.no}")
+    val v = null
+    println(v.toString())
+
+    val text = """
+|asd
+|啊盛大盛大
+        """.trimMargin()
+    print(text)
+    val i = 10
+    val s = "i = $i" // 求值结果为 "i = 10"
+    println(s)
+
+
+}
+
+fun Any?.toString(): String {
+    if (this == null) return "null"
 
     return toString()
 
 }
-class D{
+
+class D {
     companion object {
 
     }
-    fun d(){
+
+    fun d() {
         println("123")
     }
 }
-fun D.Companion.foo(){
+
+fun D.Companion.foo() {
     println("D的扩展函数")
 }
+
 val D.Companion.no: Int
     get() = 10
 
-fun D.d(){
+fun D.d() {
     println("456")
 }
 
@@ -72,32 +93,35 @@ fun test3() {
     user.Print()
 }
 
-fun User.Print(){
-        println("user name is $name")
+fun User.Print() {
+    println("user name is $name")
 }
-open class A{
-    open fun f(){
+
+open class A {
+    open fun f() {
         println("A")
     }
-    fun a(){
+
+    fun a() {
         println("a")
     }
 }
-interface B{
-    fun f(){
+
+interface B {
+    fun f() {
         println("B")
     }
-    fun b(){
+
+    fun b() {
         println("b")
     }
 }
-class C:A(),B{
-     override fun f() {
 
-     }
+class C : A(), B {
+    override fun f() {
+
+    }
 }
-
-
 
 
 fun test2() {
