@@ -19,10 +19,25 @@ interface TestInterface {
 }
 
 
+//委托
+interface Base{
+    fun print()
+}
+
+//实现此接口的被委托的类
+
+class BaseImpl(val  x:Int):Base{
+    override fun print() {
+        print(x)
+    }
+}
+class Derived(b:Base) :Base by b
 
 fun main(args: Array<String>) {
-  val t = Test()
 
+//    委托
+    val baseImpl = BaseImpl(10)
+    Derived(baseImpl).print()
 
 }
 fun test4(){

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9da68487-0fe8-4278-9965-6bff3d6b48aa" name="Default" comment="basic pr">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/com/testsmirk/MainKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/com/testsmirk/MainKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="9da68487-0fe8-4278-9965-6bff3d6b48aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" afterPath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" />
     </list>
@@ -21,8 +18,8 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="875">
+              <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="n#!!block;n#TestInterface#0" expanded="false" />
                 <element signature="n#!!block;n#d#0" expanded="false" />
@@ -708,7 +705,7 @@
       <workItem from="1503296261347" duration="7704000" />
       <workItem from="1504438907751" duration="14000" />
       <workItem from="1510037840537" duration="396000" />
-      <workItem from="1510038257498" duration="1259000" />
+      <workItem from="1510038257498" duration="2011000" />
     </task>
     <task id="LOCAL-00001" summary="basic pr">
       <created>1503295505365</created>
@@ -717,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503295505365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="review kotlin(【pic】˙0˙)&#10;╦══╦╔═╮═╩═╮═╦═•║══╬═╮╔•╔╩╮╔•  &#10;╠══╣║．║╰═╝║║║••║••║•║╰═║．║╰═  &#10;╠══╣║．║╰═╝╝║║║║║••║•║╔•╠═╣╔•  &#10;╩══╬╰═╝╔═╮║║╠╯╰╬══╬═╩╰═╰═╝╰═  &#10;═══╦══╯║•║║║║••║•╔╝╮•═══╬═══  &#10;•══╬══•║•║║╩╩═•║•║•║••║•║• ║•">
+      <created>1510039750820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1510039750820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -735,7 +739,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13715000" />
+    <option name="totallyTimeSpent" value="14467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1909" y="0" width="1942" height="2101" extended-state="0" />
@@ -743,7 +747,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32831168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -806,7 +810,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic pr" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic pr" />
+    <MESSAGE value="review kotlin(【pic】˙0˙)&#10;╦══╦╔═╮═╩═╮═╦═•║══╬═╮╔•╔╩╮╔•  &#10;╠══╣║．║╰═╝║║║••║••║•║╰═║．║╰═  &#10;╠══╣║．║╰═╝╝║║║║║••║•║╔•╠═╣╔•  &#10;╩══╬╰═╝╔═╮║║╠╯╰╬══╬═╩╰═╰═╝╰═  &#10;═══╦══╯║•║║║║••║•╔╝╮•═══╬═══  &#10;•══╬══•║•║║╩╩═•║•║•║••║•║• ║•" />
+    <option name="LAST_COMMIT_MESSAGE" value="review kotlin(【pic】˙0˙)&#10;╦══╦╔═╮═╩═╮═╦═•║══╬═╮╔•╔╩╮╔•  &#10;╠══╣║．║╰═╝║║║••║••║•║╰═║．║╰═  &#10;╠══╣║．║╰═╝╝║║║║║••║•║╔•╠═╣╔•  &#10;╩══╬╰═╝╔═╮║║╠╯╰╬══╬═╩╰═╰═╝╰═  &#10;═══╦══╯║•║║║║••║•╔╝╮•═══╬═══  &#10;•══╬══•║•║║╩╩═•║•║•║••║•║• ║•" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1150,8 +1155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="875">
+          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="n#!!block;n#TestInterface#0" expanded="false" />
             <element signature="n#!!block;n#d#0" expanded="false" />
