@@ -1,6 +1,7 @@
 package com.testsmirk
 
 import com.testsmirk.`class`.Student
+import java.util.regex.Pattern
 
 /**
  * Created by testsmirk on 2017/8/18.
@@ -20,27 +21,62 @@ interface TestInterface {
 
 
 //委托
-interface Base{
+interface Base {
     fun print()
 }
 
 //实现此接口的被委托的类
 
-class BaseImpl(val  x:Int):Base{
+class BaseImpl(val x: Int) : Base {
     override fun print() {
         print(x)
     }
 }
-class Derived(b:Base) :Base by b
+
+class Derived(b: Base) : Base by b
+
 
 fun main(args: Array<String>) {
+   val a=null
+    print(a)
+}
 
-//    委托
+fun match(url: String, regex: String): Boolean {
+    val regex1 = Pattern.compile(regex)
+    val matcher = regex1.matcher(url)
+
+    return matcher.matches()
+}
+
+fun test7() {
+
+    val fruits = listOf("ather", "apple", "banner", "kiwi")
+    fruits.filter { it.contains("a") }
+            .sortedBy { it }
+            .map { it.toUpperCase() }
+            .forEach {
+                println(it)
+            }
+}
+
+fun test6() {
+    val list = listOf("1", "2", 3)
+    if (1 !in list) {
+        println("not in")
+    }
+    for (i in 9 downTo 0 step 1) {
+        println(i)
+    }
+}
+
+fun test5() {
+
+    //    委托
     val baseImpl = BaseImpl(10)
     Derived(baseImpl).print()
-
 }
-fun test4(){
+
+fun test4() {
     test1()
     test2()
     test3();
