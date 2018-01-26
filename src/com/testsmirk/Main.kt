@@ -1,6 +1,7 @@
 package com.testsmirk
 
 import com.testsmirk.`class`.Student
+import java.text.DecimalFormat
 import java.util.regex.Pattern
 
 /**
@@ -36,16 +37,116 @@ class BaseImpl(val x: Int) : Base {
 class Derived(b: Base) : Base by b
 
 
-fun main(args: Array<String>) {
-   val a=null
-    print(a)
+class AClass {
+    fun aFun() {
+        print("123")
+    }
 }
+
+open class Foo2() {
+    open fun f() {
+
+    }
+}
+
+class Bar4 : Foo2() {
+    override fun f() {
+        super.f()
+        print("override fun ")
+    }
+
+    object Baz {
+        fun g() {
+
+        }
+    }
+}
+
+
+private val dayArr = intArrayOf(20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22)
+private val constellationArr = arrayOf("摩羯座", "水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座")
+
+
+fun getConstellation(month: Int, day: Int): String {
+    return if (day < dayArr[month - 1]) constellationArr[month - 1] else constellationArr[month]
+}
+
+fun main(args: Array<String>) {
+
+    val url3 = "http://music.163.com/m/video?id=DBEA49CAA5CFCB2F3F3E13CA8043AABA&userid=1342344235%C2%A0(%E6%9D%A5%E8%87%AA@%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)"
+    val reg = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$"
+    val matcher1 = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$".toRegex().toPattern().matcher(url3)
+    val matcher2 = ""
+    val matchesResult = Pattern.matches(reg, url3)
+    println("matchesResult ${matchesResult}")
+    println("matcher1.matches() ${matcher1}")
+
+    val url1 = "http://vm-media-test.b0.upaiyun.com/images/000/10/01/75/0001515585436574.jpeg!300px"
+    val url = "http://vm-media-test.b0.upaiyun.com/chatting/gift/1515056631981677.zip"
+    val toRegex = "\\w*\\.jpeg".toRegex()
+    val matcher = toRegex.toPattern().matcher(url1)
+    //    println("toRegex.pattern ${matcher.find()}")
+    if (matcher.find()) {
+        println("matcher.group() ${matcher.group()}")
+    }
+
+
+    print("getConstellation() ${getConstellation(9, 21)}")
+
+    println(10000.formatStr())
+
+    println("200.5.doubleTrans() ${200.4.doubleTrans()}")
+    println("200.5.doubleTrans() ${200.5.doubleTrans()}")
+    println("200.5.doubleTrans() ${200.6.doubleTrans()}")
+    println("200.5.doubleTrans() ${200.7.doubleTrans()}")
+    println("200.5.doubleTrans() ${200.8.doubleTrans()}")
+    println("200.5.doubleTrans() ${200.9.doubleTrans()}")
+
+
+}
+
+fun Double.doubleTrans(): String {
+    return if (Math.round(this) - this == 0.0) {
+        this.toLong().toString()
+    } else this.toString()
+}
+
+fun generatePage(withEmphasis: Boolean) {
+    val result =
+            ""
+    println(result)
+}
+
+inline fun foo(inlined: () -> String, noinline notInlined: () -> Unit): Unit {
+
+
+}
+
+fun Double.toStr(): String {
+    val fmt = DecimalFormat("#.00")
+    return fmt.format(this)
+}
+
+fun Double.toStr1(): String {
+    val fmt = DecimalFormat("#.0")
+    return fmt.format(this)
+}
+
+fun Int.formatStr(): String {
+    if (this >= 10000) {
+        return "${(this / 10000.0).toStr1()}W"
+    } else {
+        return this.toString()
+    }
+}
+
 
 fun match(url: String, regex: String): Boolean {
     val regex1 = Pattern.compile(regex)
     val matcher = regex1.matcher(url)
 
     return matcher.matches()
+
 }
 
 fun test7() {
@@ -99,12 +200,6 @@ fun test4() {
 
 }
 
-fun Any?.toString(): String {
-    if (this == null) return "null"
-
-    return toString()
-
-}
 
 class D {
     companion object {
