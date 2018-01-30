@@ -1,8 +1,11 @@
 package com.testsmirk
 
 import com.testsmirk.`class`.Student
+import java.lang.module.ModuleFinder.compose
 import java.text.DecimalFormat
+import java.util.Arrays.compare
 import java.util.regex.Pattern
+import kotlin.properties.Delegates
 
 /**
  * Created by testsmirk on 2017/8/18.
@@ -71,8 +74,41 @@ fun getConstellation(month: Int, day: Int): String {
     return if (day < dayArr[month - 1]) constellationArr[month - 1] else constellationArr[month]
 }
 
+
+class User0(val map: Map<String, Any?>) {
+    val username: String by map
+    val userage: Int by map
+    var name: String by Delegates.observable("TextSmirk") { d, old, new ->
+        println("$old - $new - $d")
+    }
+    var name1: String by Delegates.notNull<String>()
+    fun init(name1: String) {
+        this.name1 = name1
+
+    }
+}
+fun length(s:String) =s.length
+fun isOdd(x: Int) = x % 2 != 0
+fun  <A,B,C> compose(f:(B)->C,g:(A)->B):(A)->C{
+    return {x->f(g(x))}
+}
+
+
 fun main(args: Array<String>) {
 
+
+    val compose = compose(::isOdd, ::length)
+    val numbers = listOf<Int>(1, 2, 3, 4, 5)
+    println("numbers.filter(::isOdd)  " + numbers.filter(::isOdd))
+    val user0 = User0(mapOf(
+            "username" to "myname",
+            "userage" to 12.0f
+    ))
+    println("user ${user0.username} ${user0.userage}")
+    user0.name = "Curl"
+
+    user0.init("")
+    println(user0.name1)
     val url3 = "http://music.163.com/m/video?id=DBEA49CAA5CFCB2F3F3E13CA8043AABA&userid=1342344235%C2%A0(%E6%9D%A5%E8%87%AA@%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)"
     val reg = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$"
     val matcher1 = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$".toRegex().toPattern().matcher(url3)
@@ -103,9 +139,6 @@ fun main(args: Array<String>) {
     println("200.5.doubleTrans() ${200.9.doubleTrans()}")
 
 
-
-
-
 }
 
 fun Double.doubleTrans(): String {
@@ -113,6 +146,7 @@ fun Double.doubleTrans(): String {
         this.toLong().toString()
     } else this.toString()
 }
+
 
 fun generatePage(withEmphasis: Boolean) {
     val result =
