@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9da68487-0fe8-4278-9965-6bff3d6b48aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kotlin/com/testsmirk/MainKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/com/testsmirk/MainKt.class" />
       <change beforePath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" afterPath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="475">
+              <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
               <folding>
                 <element signature="e#23#233#0" expanded="true" />
                 <element signature="n#!!block;n#TestInterface#0" expanded="false" />
@@ -35,6 +34,16 @@
                 <element signature="n#!!block;n#sumAnd#0" expanded="false" />
                 <element signature="n#!!block;n#sumAnd#1" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Comparisons.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Comparisons.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="151" column="55" lean-forward="false" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,16 +78,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="B.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/testsmirk/latter/B.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -742,7 +741,7 @@
       <workItem from="1515586544955" duration="2002000" />
       <workItem from="1516332016991" duration="1514000" />
       <workItem from="1516846544949" duration="1528000" />
-      <workItem from="1516957084158" duration="7117000" />
+      <workItem from="1516957084158" duration="7313000" />
     </task>
     <task id="LOCAL-00001" summary="basic pr">
       <created>1503295505365</created>
@@ -800,7 +799,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517282814240</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="map可以用减号来操作key..">
+      <created>1517282905255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1517282905255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -818,7 +824,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48593000" />
+    <option name="totallyTimeSpent" value="48789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1128" extended-state="6" />
@@ -896,7 +902,8 @@
     <MESSAGE value="demo update0" />
     <MESSAGE value="泛型&#10;在java就没学好,到现在还是看不懂" />
     <MESSAGE value="takeUnless 没懂.." />
-    <option name="LAST_COMMIT_MESSAGE" value="takeUnless 没懂.." />
+    <MESSAGE value="map可以用减号来操作key.." />
+    <option name="LAST_COMMIT_MESSAGE" value="map可以用减号来操作key.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -907,14 +914,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/testsmirk/class/Person.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/testsmirk/class/Student.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1328,10 +1327,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/generated/_Comparisons.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="151" column="55" lean-forward="false" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="475">
+          <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
           <folding>
             <element signature="e#23#233#0" expanded="true" />
             <element signature="n#!!block;n#TestInterface#0" expanded="false" />
