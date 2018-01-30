@@ -19,8 +19,8 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state relative-caret-position="460">
+              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
               <folding>
                 <element signature="e#23#233#0" expanded="true" />
                 <element signature="n#!!block;n#TestInterface#0" expanded="false" />
@@ -742,7 +742,7 @@
       <workItem from="1515586544955" duration="2002000" />
       <workItem from="1516332016991" duration="1514000" />
       <workItem from="1516846544949" duration="1528000" />
-      <workItem from="1516957084158" duration="7022000" />
+      <workItem from="1516957084158" duration="7117000" />
     </task>
     <task id="LOCAL-00001" summary="basic pr">
       <created>1503295505365</created>
@@ -793,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517282601068</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="takeUnless 没懂..">
+      <created>1517282814240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1517282814240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -811,7 +818,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48498000" />
+    <option name="totallyTimeSpent" value="48593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2064" height="1128" extended-state="6" />
@@ -888,7 +895,8 @@
     <MESSAGE value="demo update" />
     <MESSAGE value="demo update0" />
     <MESSAGE value="泛型&#10;在java就没学好,到现在还是看不懂" />
-    <option name="LAST_COMMIT_MESSAGE" value="泛型&#10;在java就没学好,到现在还是看不懂" />
+    <MESSAGE value="takeUnless 没懂.." />
+    <option name="LAST_COMMIT_MESSAGE" value="takeUnless 没懂.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1322,8 +1330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
           <folding>
             <element signature="e#23#233#0" expanded="true" />
             <element signature="n#!!block;n#TestInterface#0" expanded="false" />

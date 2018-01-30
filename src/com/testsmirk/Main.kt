@@ -101,6 +101,10 @@ fun testTakeUnless(string: String) {
 
 fun main(args: Array<String>) {
 
+    val map = mapOf("key" to 22)
+    val emptyMap = map -"key"
+    println("map $map")
+    println("emptyMap $emptyMap")
     testTakeUnless("")
     testTakeUnless("123")
 
