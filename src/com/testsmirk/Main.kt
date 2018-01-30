@@ -87,15 +87,22 @@ class User0(val map: Map<String, Any?>) {
 
     }
 }
-fun length(s:String) =s.length
+
+fun length(s: String) = s.length
 fun isOdd(x: Int) = x % 2 != 0
-fun  <A,B,C> compose(f:(B)->C,g:(A)->B):(A)->C{
-    return {x->f(g(x))}
+fun <A, B, C> compose(f: (B) -> C, g: (A) -> B): (A) -> C {
+    return { x -> f(g(x)) }
 }
 
+fun testTakeUnless(string: String) {
+    val result = string.takeUnless(String::isEmpty)
+    println("string = $string result $result")
+}
 
 fun main(args: Array<String>) {
 
+    testTakeUnless("")
+    testTakeUnless("123")
 
     val compose = compose(::isOdd, ::length)
     val numbers = listOf<Int>(1, 2, 3, 4, 5)
