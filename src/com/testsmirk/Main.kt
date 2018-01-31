@@ -87,6 +87,8 @@ class User0(val map: Map<String, Any?>) {
 
     }
 }
+class MyTextCase{
+}
 
 fun length(s: String) = s.length
 fun isOdd(x: Int) = x % 2 != 0
@@ -99,7 +101,22 @@ fun testTakeUnless(string: String) {
     println("string = $string result $result")
 }
 
+lateinit var isNode:String
+fun foo(bar:Int=0,baz:Int=1,qux:()->Unit){
+}
 fun main(args: Array<String>) {
+
+    foo{}
+    if (::isNode.isInitialized){
+
+    }
+    for (i in '0'..'9'){
+        println(i)
+    }
+    val squares = List(10) { index -> index * index }
+    val mutable = MutableList(10) { 0 }
+    println("squares $squares mutable $mutable" +
+            "")
 
     val list1 = listOf("a", "b")
     val list2 = listOf("x", "y", "z")
