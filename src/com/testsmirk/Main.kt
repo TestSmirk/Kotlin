@@ -104,8 +104,16 @@ fun testTakeUnless(string: String) {
 lateinit var isNode:String
 fun foo(bar:Int=0,baz:Int=1,qux:()->Unit){
 }
+fun String.getUrl(): String? {
+    val matcher = "^((https|http|ftp|rtsp|mms)?://)[^\\s]+".toRegex().toPattern().matcher(this)
+    if (matcher.find()) {
+        return matcher.group()
+    }
+    return ""
+}
 fun main(args: Array<String>) {
 
+    println("\"http://url.cn\".getUrl():    ${"http://tool.chinaz.com/regex".getUrl()}")
     foo{}
     if (::isNode.isInitialized){
 
