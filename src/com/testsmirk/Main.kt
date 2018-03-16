@@ -1,8 +1,16 @@
-package com.testsmirk
+package com.t
+
+import com.testsmirk.Outer
+import com.testsmirk.Smirk
+import com.testsmirk.Smirk1
+import com.testsmirk.User
+import java.util.*
+
 
 import com.testsmirk.`class`.Student
 import java.lang.module.ModuleFinder.compose
 import java.text.DecimalFormat
+import java.util.*
 import java.util.Arrays.compare
 import java.util.regex.Pattern
 import kotlin.properties.Delegates
@@ -87,7 +95,8 @@ class User0(val map: Map<String, Any?>) {
 
     }
 }
-class MyTextCase{
+
+class MyTextCase {
 }
 
 fun length(s: String) = s.length
@@ -101,9 +110,10 @@ fun testTakeUnless(string: String) {
     println("string = $string result $result")
 }
 
-lateinit var isNode:String
-fun foo(bar:Int=0,baz:Int=1,qux:()->Unit){
+lateinit var isNode: String
+fun foo(bar: Int = 0, baz: Int = 1, qux: () -> Unit) {
 }
+
 fun String.getUrl(): String? {
     val matcher = "^((https|http|ftp|rtsp|mms)?://)[^\\s]+".toRegex().toPattern().matcher(this)
     if (matcher.find()) {
@@ -111,75 +121,139 @@ fun String.getUrl(): String? {
     }
     return ""
 }
+
+fun Click() {
+    print("click")
+}
+
+class User {
+    fun setonClick(unit: Unit) {
+
+
+    }
+}
+
+private val portRange = 8888..8899
 fun main(args: Array<String>) {
+//    val baseImpl = BaseImpl(1)
+//    Derived(baseImpl).print()
 
-    println("\"http://url.cn\".getUrl():    ${"http://tool.chinaz.com/regex".getUrl()}")
-    foo{}
-    if (::isNode.isInitialized){
+    for (i in portRange) {
 
-    }
-    for (i in '0'..'9'){
-        println(i)
-    }
-    val squares = List(10) { index -> index * index }
-    val mutable = MutableList(10) { 0 }
-    println("squares $squares mutable $mutable" +
-            "")
-
-    val list1 = listOf("a", "b")
-    val list2 = listOf("x", "y", "z")
-    val minSize = minOf(list1.size, list2.size)
-    val maxSize = maxOf(list1, list2, compareBy { it.size })
-    println("minsize $minSize maxSize $maxSize")
-    val map = mapOf("key" to 22)
-    val emptyMap = map - "key"
-    println("map $map")
-    println("emptyMap $emptyMap")
-    testTakeUnless("")
-    testTakeUnless("123")
-
-    val compose = compose(::isOdd, ::length)
-    val numbers = listOf<Int>(1, 2, 3, 4, 5)
-    println("numbers.filter(::isOdd)  " + numbers.filter(::isOdd))
-    val user0 = User0(mapOf(
-            "username" to "myname",
-            "userage" to 12.0f
-    ))
-    println("user ${user0.username} ${user0.userage}")
-    user0.name = "Curl"
-
-    user0.init("")
-    println(user0.name1)
-    val url3 = "http://music.163.com/m/video?id=DBEA49CAA5CFCB2F3F3E13CA8043AABA&userid=1342344235%C2%A0(%E6%9D%A5%E8%87%AA@%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)"
-    val reg = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$"
-    val matcher1 = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$".toRegex().toPattern().matcher(url3)
-    val matcher2 = ""
-    val matchesResult = Pattern.matches(reg, url3)
-    println("matchesResult ${matchesResult}")
-    println("matcher1.matches() ${matcher1}")
-
-    val url1 = "http://vm-media-test.b0.upaiyun.com/images/000/10/01/75/0001515585436574.jpeg!300px"
-    val url = "http://vm-media-test.b0.upaiyun.com/chatting/gift/1515056631981677.zip"
-    val toRegex = "\\w*\\.jpeg".toRegex()
-    val matcher = toRegex.toPattern().matcher(url1)
-    //    println("toRegex.pattern ${matcher.find()}")
-    if (matcher.find()) {
-        println("matcher.group() ${matcher.group()}")
+        if (i == 8890) {
+            println("333")
+            break
+        }
+        println("---")
     }
 
+}
 
-    print("getConstellation() ${getConstellation(9, 21)}")
+class Test6 {
+    fun test6() {
 
-    println(10000.formatStr())
+        println("${System.currentTimeMillis()}-------------------------")
+        val timer = java.util.Timer()
+        val timerTask = object : TimerTask() {
+            override fun run() {
+                println("timer   ")
+            }
 
-    println("200.5.doubleTrans() ${200.4.doubleTrans()}")
-    println("200.5.doubleTrans() ${200.5.doubleTrans()}")
-    println("200.5.doubleTrans() ${200.6.doubleTrans()}")
-    println("200.5.doubleTrans() ${200.7.doubleTrans()}")
-    println("200.5.doubleTrans() ${200.8.doubleTrans()}")
-    println("200.5.doubleTrans() ${200.9.doubleTrans()}")
+        }
+        timer.schedule(timerTask, 0, 1000)
+        val toInt = 2882341273.toInt()
+        println("2882341273  $toInt ")
+        val sss = 121 * 1020
+        var minutes = sss.div(1000 * 60)
+        var sec = sss.div(1000) % (60)
+
+        if (minutes == 0) {
+            minutes = 1
+        } else if (sec > 0) {
+            minutes += 1
+        }
+        println("minutes ${minutes}")
+
+        println(1 or 3)
+        val arrayTemp = ArrayList<Int>()
+        arrayTemp.add(9)
+        arrayTemp.add(2)
+        arrayTemp.add(5)
+        arrayTemp.add(8)
+        arrayTemp.sortBy { it < 0 }
+        arrayTemp.forEach {
+            println("arrayTemp" + it)
+        }
 
 
+
+        println("\"http://url.cn\".getUrl():    ${"http://tool.chinaz.com/regex".getUrl()}")
+        foo {}
+        if (::isNode.isInitialized) {
+
+        }
+        for (i in '0'..'9') {
+            println(i)
+        }
+        val squares = List(10) { index -> index * index }
+        val mutable = MutableList(10) { 0 }
+        println("squares $squares mutable $mutable" +
+                "")
+
+        val list1 = listOf("a", "b")
+        val list2 = listOf("x", "y", "z")
+        val minSize = minOf(list1.size, list2.size)
+        val maxSize = maxOf(list1, list2, compareBy { it.size })
+        println("minsize $minSize maxSize $maxSize")
+        val map = mapOf("key" to 22)
+        val emptyMap = map - "key"
+        println("map $map")
+        println("emptyMap $emptyMap")
+        testTakeUnless("")
+        testTakeUnless("123")
+
+        val compose = compose(::isOdd, ::length)
+        val numbers = listOf<Int>(1, 2, 3, 4, 5)
+        println("numbers.filter(::isOdd)  " + numbers.filter(::isOdd))
+        val user0 = User0(mapOf(
+                "username" to "myname",
+                "userage" to 12.0f
+        ))
+        println("user ${user0.username} ${user0.userage}")
+        user0.name = "Curl"
+
+        user0.init("")
+        println(user0.name1)
+        val url3 = "http://music.163.com/m/video?id=DBEA49CAA5CFCB2F3F3E13CA8043AABA&userid=1342344235%C2%A0(%E6%9D%A5%E8%87%AA@%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)"
+        val reg = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$"
+        val matcher1 = "^((?!vmind\\.qqvideo|btrace\\.video|www\\.facebook\\.com|data\\.video\\.qiyi\\.com|tadpoles\\.xyz).)*(\\.mp4|\\.3gp|\\.swf|\\.flv)(?!\\?vframe|%3F|%22%2C|v=).*\$".toRegex().toPattern().matcher(url3)
+        val matcher2 = ""
+        val matchesResult = Pattern.matches(reg, url3)
+        println("matchesResult ${matchesResult}")
+        println("matcher1.matches() ${matcher1}")
+
+        val url1 = "http://vm-media-test.b0.upaiyun.com/images/000/10/01/75/0001515585436574.jpeg!300px"
+        val url = "http://vm-media-test.b0.upaiyun.com/chatting/gift/1515056631981677.zip"
+        val toRegex = "\\w*\\.jpeg".toRegex()
+        val matcher = toRegex.toPattern().matcher(url1)
+        //    println("toRegex.pattern ${matcher.find()}")
+        if (matcher.find()) {
+            println("matcher.group() ${matcher.group()}")
+        }
+
+
+        print("getConstellation() ${getConstellation(9, 21)}")
+
+        println(10000.formatStr())
+
+        println("200.5.doubleTrans() ${200.4.doubleTrans()}")
+        println("200.5.doubleTrans() ${200.5.doubleTrans()}")
+        println("200.5.doubleTrans() ${200.6.doubleTrans()}")
+        println("200.5.doubleTrans() ${200.7.doubleTrans()}")
+        println("200.5.doubleTrans() ${200.8.doubleTrans()}")
+        println("200.5.doubleTrans() ${200.9.doubleTrans()}")
+
+    }
 }
 
 fun Double.doubleTrans(): String {
