@@ -271,6 +271,7 @@ fun generatePage(withEmphasis: Boolean) {
 
 inline fun foo(inlined: () -> String, noinline notInlined: () -> Unit): Unit {
 
+     //thisMethodCanThroughTopFun()
 
 }
 

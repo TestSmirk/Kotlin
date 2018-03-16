@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9da68487-0fe8-4278-9965-6bff3d6b48aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kotlin/META-INF/Kotlin.kotlin_module" afterPath="$PROJECT_DIR$/out/production/Kotlin/META-INF/Kotlin.kotlin_module" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kotlin/com/testsmirk/MainKt.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" afterPath="$PROJECT_DIR$/src/com/testsmirk/Main.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="270" column="0" lean-forward="false" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="273" column="36" lean-forward="true" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
               <folding>
                 <element signature="e#15#373#0" expanded="true" />
                 <element signature="n#!!block;n#TestInterface#0" expanded="false" />
@@ -182,12 +180,6 @@
               <item name="Kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testsmirk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -708,7 +700,7 @@
       <workItem from="1520477198715" duration="1620000" />
       <workItem from="1520564567476" duration="1730000" />
       <workItem from="1521018525006" duration="2976000" />
-      <workItem from="1521183456379" duration="4000" />
+      <workItem from="1521183456379" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="basic pr">
       <created>1503295505365</created>
@@ -794,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517563703249</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="learn a little bit">
+      <created>1521183555898</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1521183555898</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -812,7 +811,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71232000" />
+    <option name="totallyTimeSpent" value="72005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="314" y="73" width="1695" height="929" extended-state="0" />
@@ -894,7 +893,8 @@
     <MESSAGE value="size  对比." />
     <MESSAGE value="steal no word" />
     <MESSAGE value="go 太难了.我还是刷kotlin吧." />
-    <option name="LAST_COMMIT_MESSAGE" value="go 太难了.我还是刷kotlin吧." />
+    <MESSAGE value="learn a little bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn a little bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1294,8 +1294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/testsmirk/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="270" column="0" lean-forward="false" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="273" column="36" lean-forward="true" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
           <folding>
             <element signature="e#15#373#0" expanded="true" />
             <element signature="n#!!block;n#TestInterface#0" expanded="false" />
