@@ -13,6 +13,7 @@ import java.text.DecimalFormat
 import java.util.*
 import java.util.Arrays.compare
 import java.util.regex.Pattern
+import kotlin.math.max
 import kotlin.properties.Delegates
 
 /**
@@ -138,6 +139,39 @@ fun main(args: Array<String>) {
 //    val baseImpl = BaseImpl(1)
 //    Derived(baseImpl).print()
 
+//    {
+//        "dog",
+//        "google",
+//        "facebook",
+//        "internationalization",
+//        "blabla"
+//    }
+
+    val theList = listOf<String>("dog", "google", "facebook", "internationalization", "blabla")
+    val largestWords = arrayListOf<String>()
+    var maxLength = 0
+    for (i in theList) {
+        if (i.length >= maxLength) {
+            println("iii $i")
+            largestWords.add(i)
+            maxLength = i.length
+        } else {
+            largestWords.removeAt(0)
+        }
+    }
+    println("largestWords ${getIntList().forEach(::println)}")
+}
+
+val MaxListSize = 9999;
+fun getIntList(): IntArray {
+    val temList = IntArray(MaxListSize)
+    for (index in temList.indices) {
+        temList[index] = (Math.random() * MaxListSize).toInt()
+    }
+    return temList
+}
+
+fun test9() {
     for (i in portRange) {
 
         if (i == 8890) {
@@ -146,7 +180,6 @@ fun main(args: Array<String>) {
         }
         println("---")
     }
-
 }
 
 class Test6 {
@@ -271,7 +304,7 @@ fun generatePage(withEmphasis: Boolean) {
 
 inline fun foo(inlined: () -> String, noinline notInlined: () -> Unit): Unit {
 
-     //thisMethodCanThroughTopFun()
+    //thisMethodCanThroughTopFun()
 
 }
 
