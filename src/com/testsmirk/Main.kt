@@ -8,10 +8,8 @@ import java.util.*
 
 
 import com.testsmirk.`class`.Student
-import java.lang.module.ModuleFinder.compose
 import java.text.DecimalFormat
 import java.util.*
-import java.util.Arrays.compare
 import java.util.regex.Pattern
 import kotlin.math.max
 import kotlin.properties.Delegates
@@ -19,6 +17,58 @@ import kotlin.properties.Delegates
 /**
  * Created by testsmirk on 2017/8/18.
  */
+
+
+
+
+fun main(args: Array<String>) {
+    val  nums = intArrayOf(3,2,4)
+
+    //leetcode 1
+    class Solution {
+        fun twoSum(nums: IntArray, target: Int): IntArray {
+            var result:IntArray= intArrayOf()
+            for (i in nums.indices){
+                for (j in i until nums.size){
+                    if (nums[i]+nums[j]==target){
+                        result= intArrayOf(i,j)
+                        return result
+                    }
+                }
+            }
+            return result
+
+        }
+    }
+
+    var twoSum = Solution().twoSum(nums, 6)
+    print( "${twoSum[0]}  ${twoSum[1]}")
+//    val baseImpl = BaseImpl(1)
+//    Derived(baseImpl).print()
+
+//    {
+//        "dog",
+//        "google",
+//        "facebook",r
+//        "internationalization",
+//        "blabla"
+//    }
+
+//    val theList = listOf<String>("dog", "google", "facebook", "internationalization", "blabla")
+//    val largestWords = arrayListOf<String>()
+//    var maxLength = 0
+//    for (i in theList) {
+//        if (i.length >= maxLength) {
+//            println("iii $i")
+//            largestWords.add(i)
+//            maxLength = i.length
+//        } else {
+//            largestWords.removeAt(0)
+//        }
+//    }
+//    println("largestWords ${getIntList().forEach(::println)}")
+
+}
 
 class Test {
     var v = "成员属性"
@@ -135,32 +185,6 @@ class User {
 }
 
 private val portRange = 8888..8899
-fun main(args: Array<String>) {
-//    val baseImpl = BaseImpl(1)
-//    Derived(baseImpl).print()
-
-//    {
-//        "dog",
-//        "google",
-//        "facebook",
-//        "internationalization",
-//        "blabla"
-//    }
-
-    val theList = listOf<String>("dog", "google", "facebook", "internationalization", "blabla")
-    val largestWords = arrayListOf<String>()
-    var maxLength = 0
-    for (i in theList) {
-        if (i.length >= maxLength) {
-            println("iii $i")
-            largestWords.add(i)
-            maxLength = i.length
-        } else {
-            largestWords.removeAt(0)
-        }
-    }
-    println("largestWords ${getIntList().forEach(::println)}")
-}
 
 val MaxListSize = 9999;
 fun getIntList(): IntArray {
