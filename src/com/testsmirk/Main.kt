@@ -147,11 +147,6 @@ fun main(args: Array<String>) {
 //        "blabla"
 //    }
 
-
-    val l = System.currentTimeMillis() + 30 * 24 * 60 * 60 * 1000L
-    println("current time $l")
-    val number = "3"
-    println("number.doubleTrans() "+number.toDouble().doubleTrans())
     val theList = listOf<String>("dog", "google", "facebook", "internationalization", "blabla")
     val largestWords = arrayListOf<String>()
     var maxLength = 0
@@ -164,17 +159,10 @@ fun main(args: Array<String>) {
             largestWords.removeAt(0)
         }
     }
-    val intList = getIntList()
-
-    println("largestWords ${intList.forEach(::println)}")
-    for (index in intList.indices) {
-        for (i in 0..intList.size-index){
-
-        }
-    }
+    println("largestWords ${getIntList().forEach(::println)}")
 }
 
-val MaxListSize = 1;
+val MaxListSize = 9999;
 fun getIntList(): IntArray {
     val temList = IntArray(MaxListSize)
     for (index in temList.indices) {
