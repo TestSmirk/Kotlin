@@ -1,8 +1,6 @@
 package com.t
 
-import com.testsmirk.Outer
-import com.testsmirk.Smirk
-import com.testsmirk.Smirk1
+import com.testsmirk.*
 import com.testsmirk.User
 import java.util.*
 
@@ -146,20 +144,7 @@ fun main(args: Array<String>) {
 //        "internationalization",
 //        "blabla"
 //    }
-
-    val theList = listOf<String>("dog", "google", "facebook", "internationalization", "blabla")
-    val largestWords = arrayListOf<String>()
-    var maxLength = 0
-    for (i in theList) {
-        if (i.length >= maxLength) {
-            println("iii $i")
-            largestWords.add(i)
-            maxLength = i.length
-        } else {
-            largestWords.removeAt(0)
-        }
-    }
-    println("largestWords ${getIntList().forEach(::println)}")
+    ArrayRead.fin()
 }
 
 val MaxListSize = 9999;
