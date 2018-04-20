@@ -2,6 +2,7 @@ package com.t
 
 import com.testsmirk.*
 import com.testsmirk.User
+import com.testsmirk.`class`.CallBackTest
 import java.util.*
 
 
@@ -132,6 +133,7 @@ class User {
     }
 }
 
+
 private val portRange = 8888..8899
 fun main(args: Array<String>) {
 //    val baseImpl = BaseImpl(1)
@@ -145,6 +147,11 @@ fun main(args: Array<String>) {
 //        "blabla"
 //    }
     ArrayRead.fin()
+    val callBackTest = CallBackTest()
+    callBackTest.setCallBack { name, age ->
+        println("name $name age $age")
+    }
+    callBackTest.run()
 }
 
 val MaxListSize = 9999;
