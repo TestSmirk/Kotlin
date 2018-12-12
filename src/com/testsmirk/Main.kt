@@ -1,20 +1,13 @@
-package com.t
+package com.testsmirk
 
-import com.testsmirk.*
-import com.testsmirk.User
-import com.testsmirk.`class`.CallBackTest
 import java.util.*
 
 
 import com.testsmirk.`class`.Student
 import java.io.File
-import java.lang.module.ModuleFinder.compose
 import java.text.DecimalFormat
-import java.util.*
-import java.util.Arrays.compare
 import java.util.regex.Pattern
 import kotlin.collections.ArrayList
-import kotlin.math.max
 import kotlin.properties.Delegates
 
 /**
@@ -137,6 +130,7 @@ class User {
 
 
 private val portRange = 8888..8899
+
 fun main(args: Array<String>) {
 //    val baseImpl = BaseImpl(1)
 //    Derived(baseImpl).print()
@@ -159,7 +153,6 @@ fun main(args: Array<String>) {
         println("Runnable::run")
     }
     val funcatiion:()->Unit
-    print("")
     funcatiion = runnable::run
 
 
