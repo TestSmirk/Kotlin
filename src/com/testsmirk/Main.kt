@@ -7,11 +7,13 @@ import java.util.*
 
 
 import com.testsmirk.`class`.Student
+import java.io.File
 import java.lang.module.ModuleFinder.compose
 import java.text.DecimalFormat
 import java.util.*
 import java.util.Arrays.compare
 import java.util.regex.Pattern
+import kotlin.collections.ArrayList
 import kotlin.math.max
 import kotlin.properties.Delegates
 
@@ -145,14 +147,67 @@ fun main(args: Array<String>) {
 //        "facebook",
 //        "internationalization",
 //        "blabla"
+////    }
+//    ArrayRead.fin()
+//    val callBackTest = CallBackTest()
+//    callBackTest.setCallBack { name, age ->
+//        println("name $name age $age")
 //    }
-    ArrayRead.fin()
-    val callBackTest = CallBackTest()
-    callBackTest.setCallBack { name, age ->
-        println("name $name age $age")
+//    callBackTest.run()
+
+    val runnable  = Runnable {
+        println("Runnable::run")
     }
-    callBackTest.run()
+    val funcatiion:()->Unit
+    print("")
+    funcatiion = runnable::run
+
+
+    val age = 19
+    val name = "zhang"
+    println(File("Kotlin.iml").readText())
+    var textText = "1544494336823_303.gif"
+    val reg = Regex("_\\d+\\.")
+    val find = reg.find(textText)
+    println(find?.value)
+
+
+    val points = "[375.73907, 304.7907], [375.73907, 312.7876], [363.7474, 410.74933], [363.7474, 560.69073], [412.0685, 931.25543], [571.603, 1034.5056], [739.7689, 1023.47455], [778.07996, 1010.267], [837.4248, 991.77155], [862.0449, 988.69293], [876.0897, 961.836], [891.381, 938.54315], [947.34216, 882.565], [974.19653, 839.5849], [999.306, 802.59625], [1035.281, 690.63995], [1051.0503, 632.8018], [1055.2672, 506.71185], [1046.6866, 425.17218], [1031.2838, 382.7602], [691.7449, 340.12854], [690.6373, 333.48114], [664.5236, 286.60388], [658.0108, 274.66016], [637.55725, 254.81024], [628.2442, 245.49435], [607.57806, 234.81805], [595.74243, 234.81805], [575.6003, 226.82117], [568.35626, 226.82117], [553.61554, 218.82428], [535.8839, 218.82428], [513.6433, 218.82428], [503.65024, 218.82428], [494.94302, 218.82428], [475.66968, 218.82428], [445.64148, 231.983], [436.9589, 235.70526], [432.83066, 238.81647], [422.70648, 250.8118], [413.7127, 250.8118], [405.71823, 256.80945], [399.7224, 256.80945], [393.72656, 256.80945], [376.73907, 305.7907]".split("], [")
+//    print(points)
+    points.forEach {
+        var result = ""
+        if (it.contains("[")) {
+            result = it.replace("[", "")
+
+        } else if (it.contains("]")) {
+            result = it.replace("]", "")
+        } else {
+            result = it
+        }
+        println(result)
+
+    }
+
+    val list = ArrayList<Point>()
+    list.add(Point(2, 9))
+    list.add(Point(3, 7))
+    list.add(Point(2, 5))
+    list.add(Point(4, 4))
+    val min = Collections.max(list, kotlin.Comparator { o1, o2 ->
+        o1.b - o2.b
+    })
+    print("min.a ${min.a} min.b ${min.b}")
+    min.run {
+        this.a = 2
+        this.b = 3
+    }
+    min.let {
+        it.a = 2
+        it.b = 3
+    }
 }
+
+class Point(var a: Int = 0, var b: Int = 0)
 
 val MaxListSize = 9999;
 fun getIntList(): IntArray {
